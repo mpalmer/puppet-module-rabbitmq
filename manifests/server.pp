@@ -15,7 +15,7 @@ define rabbitmq::server() {
 		"/etc/rabbitmq/enabled_plugins":
 			ensure  => file,
 			content => "[rabbitmq_management].\n",
-			mode    => 0444,
+			mode    => "0444",
 			owner   => "root",
 			group   => "root",
 			require => Package["rabbitmq-server"],
