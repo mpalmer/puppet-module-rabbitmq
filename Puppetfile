@@ -1,3 +1,3 @@
-forge "https://forgeapi.puppetlabs.com"
-
-mod 'puppetlabs/apt', "~> 2.0"
+mod "mpalmer/apt",
+	:git => "git://github.com/mpalmer/puppet-module-apt.git",
+	:ref => "v1"
